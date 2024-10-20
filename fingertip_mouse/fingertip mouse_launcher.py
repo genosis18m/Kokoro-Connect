@@ -5,7 +5,7 @@ from cvzone.HandTrackingModule import HandDetector
 
 import pyautogui
 from pynput.mouse import Listener
-
+pyautogui.FAILSAFE=False
 # Initialize variables
 mouse_x, mouse_y = 0, 0
 is_clicked = False
@@ -63,7 +63,7 @@ while True:
         cv2.circle(image, (middle_tip[0],middle_tip[1]), 20, (255, 0, 255), cv2.FILLED)
 
         double_tip=False
-        if math.dist(index_tip,middle_tip)<=30:
+        if math.dist(index_tip,middle_tip)<=40:
             double_tip=True
             if not dragging:  # Start dragging if not already dragging
                 dragging = True
