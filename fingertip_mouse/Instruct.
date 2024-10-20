@@ -4,4 +4,4 @@ here are the libraries required to run the handgesture control python file:cv2,c
 
 Functions:single finger tip just hovers the cursor on screen while double finger(when index and middle finger tips touches) simulates mouse down action.
 When mouse down for just an instant(touched and seperated quickly) it simulates a click.
-Finally,pressing q exits fron the program(though it only works when hand is in screen).
+Finally,pressing q exits fron the program.
